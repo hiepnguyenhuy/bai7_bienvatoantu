@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<h1>Caculator</h1>
+
+<input placeholder="Nhap so" type="Text" id="a">
+<input placeholder="Nhap so" type="Text" id="b"> <br/><br/>
+<button onClick = "tong()">+</button>
+<button onClick = "Tru()">-</button>
+<button onClick = "Nhan()">*</button>
+<button onClick = "Chia()">/</button>
+<p id = "Ketqua"> </p>
+<script>
+  function tong() {
+    let x = +document.getElementById("a").value;
+    let y = +document.getElementById("b").value;
+    let tong = x + y;
+    document.getElementById("Ketqua").innerHTML ='Kết quả là ' + tong;
+  }
+  function Tru() {
+    let x = +document.getElementById("a").value;
+    let y = +document.getElementById("b").value;
+    let hieu = x - y;
+    document.getElementById("Ketqua").innerHTML ='Kết quả là ' + hieu;
+  }
+  function Nhan() {
+    let x = +document.getElementById("a").value;
+    let y = +document.getElementById("b").value;
+    let tich = x * y;
+    document.getElementById("Ketqua").innerHTML ='Kết quả là ' + tich;
+  }
+  function Chia() {
+    let x = +document.getElementById("a").value;
+    let y = +document.getElementById("b").value;
+    let thuong = x / y;
+    document.getElementById("Ketqua").innerHTML ='Kết quả là ' + thuong;
+  }
+
+
+
+</script>
+<body>
+
+</body>
+</html>
